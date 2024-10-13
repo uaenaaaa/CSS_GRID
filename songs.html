@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Applying CSS Grid | Music</title>
+		<style>
+			.container {
+				width: 100%;
+				margin: 0 auto;
+				height: 100vh;
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+				grid-gap: 10px;
+				place-content: center;
+			}
+
+			.song {
+				border: 1px solid #333;
+				padding: 10px;
+				width: 200px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="song">
+				<img
+					src="https://via.placeholder.com/150"
+					alt="Song Image" />
+				<h3>Song Title</h3>
+				<p>Artist Name</p>
+				<p>Album: Album Title</p>
+				<button>Play Song</button>
+			</div>
+			<div class="song">
+				<img
+					src="https://via.placeholder.com/150"
+					alt="Song Image" />
+				<h3>Song Title</h3>
+				<p>Artist Name</p>
+				<p>Album: Album Title</p>
+				<button>Play Song</button>
+			</div>
+			<div class="song">
+				<img
+					src="https://via.placeholder.com/150"
+					alt="Song Image" />
+				<h3>Song Title</h3>
+				<p>Artist Name</p>
+				<p>Album: Album Title</p>
+				<button>Play Song</button>
+			</div>
+		</div>
+	</body>
+</html>
